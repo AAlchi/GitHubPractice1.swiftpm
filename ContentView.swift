@@ -14,7 +14,7 @@ struct ContentView: View {
             .textFieldStyle(.roundedBorder)
             .padding()
         HStack {
-            Button("Multiply") {
+            Button("x") {
                 answer = integer1 *  integer2
             }
             .frame(width: 50, height: 50)
@@ -22,22 +22,22 @@ struct ContentView: View {
             .padding()
             .foregroundColor(.black)
             Button("+") {
-                
+                answer = integer1 + integer2
             }
             .frame(width: 50, height: 50)
             .background(.blue)
             .padding()
             .foregroundColor(.black)
-            
             Button("-") {
+                answer = integer1 - integer2
                 
             }
             .frame(width: 50, height: 50)
             .background(.yellow)
             .padding()
             .foregroundColor(.black)
-            
             Button("/") {
+                answer = integer1 / integer2
                 
             }
             .frame(width: 50, height: 50)
