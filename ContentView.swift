@@ -7,12 +7,14 @@ struct ContentView: View {
     var body: some View {
         Text("Calculator")
             .font(.system(size: 30))
-        TextField("Number 1", value: $integer1, format: .number)
-            .textFieldStyle(.roundedBorder)
-            .padding()
-        TextField("Number 2", value: $integer2, format: .number)
-            .textFieldStyle(.roundedBorder)
-            .padding()
+        VStack {
+            TextField("Number 1", value: $integer1, format: .number)
+                .textFieldStyle(.roundedBorder)
+                .padding()
+            TextField("Number 2", value: $integer2, format: .number)
+                .textFieldStyle(.roundedBorder)
+                .padding()
+        }
         HStack {
             Button("x") {
                 answer = integer1 *  integer2
