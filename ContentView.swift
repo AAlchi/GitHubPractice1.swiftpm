@@ -47,6 +47,15 @@ struct ContentView: View {
             
         }
         Text("\(answer)")
+        Button("+") {
+            answer = integer1 + integer2
+        }
+        Button("-") {
+            answer = integer1 - integer2
+        }
+        Button("/") {
+            answer = integer1 /  integer2
+        }
         
     }
 }
