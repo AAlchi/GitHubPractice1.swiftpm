@@ -11,5 +11,15 @@ struct ContentView: View {
             
         }
         Text("\(answer)")
+        Button("+") {
+            
+        }
+        Button("-") {
+            
+        }
+        Button("/") {
+            
+        }
+        
     }
 }
