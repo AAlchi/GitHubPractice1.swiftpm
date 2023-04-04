@@ -7,18 +7,18 @@ struct ContentView: View {
     var body: some View {
         TextField("Number 1", value: $integer1, format: .number)
         TextField("Number 2", value: $integer2, format: .number)
-        Button("Multiply") {
+        Button("x") {
             answer = integer1 *  integer2
         }
         Text("\(answer)")
         Button("+") {
-            
+            answer = integer1 + integer2
         }
         Button("-") {
-            
+            answer = integer1 - integer2
         }
         Button("/") {
-            
+            answer = integer1 /  integer2
         }
         
     }
